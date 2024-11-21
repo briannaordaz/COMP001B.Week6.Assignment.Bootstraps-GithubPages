@@ -12,8 +12,6 @@
 </head>
 
 <body>
-	<div class="container">
-		<div class="row">
 	<div id="header-container">
 		<div>
 			<header>
@@ -22,8 +20,8 @@
 		</div>
 	</div>
 	<div id="main-container">
-		<div>
-			<nav>
+		<div class="row"> <!-- added a div class="row" so that the nav, main content, and sidebar get aligned horizontally-->
+			<nav class="col-3"> <!-- This will make the nav take up 1/4 (or 3/12 columns) of the space-->
 				<ul>
 					<li><a href="#automotive">Automotive</a></li>
 					<li><a href="#maritime">Maritime</a></li>
@@ -32,7 +30,7 @@
 					<li><a href="#myths">Popular Myths and Related Stories</a></li>
 				</ul>
 			</nav>
-			<main>
+			<main class="col-4"> <!--This will take up 1/2 of its space-->
 				<section id="intro">
 					<h2>What is this list?</h2>
 					<p>This is a list of inventors whose deaths were in some manner caused by or related to a product,
@@ -160,7 +158,7 @@
 					</ul>
 				</section>
 			</main>
-			<aside>
+			<aside class="col-3"> <!--Just like the nav column, this will take up 1/4 (or 3/12) of the space, leaving the main content with 2/4 (or 3/12, which is half) of the space-->
 				<h2>Additional Notes</h2>
 				<p>Some other interesting and similar links around the web:</p>
 				<ul>
@@ -189,8 +187,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		crossorigin="anonymous"></script>
-	</div>
-	</div>
 </body>
 
 </html>
